@@ -1,0 +1,35 @@
+.footer {
+    height: 7%;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(141, 139, 139);
+    border: 1px solid rgb(58, 57, 57);
+    border-radius: 3px;
+    padding: .3rem 8%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 24px;
+}
+
+.social-media li a {
+    text-decoration: none;
+    color: #E8E8E8;
+    font-size: smaller;
+}
