@@ -1,0 +1,14 @@
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+}
