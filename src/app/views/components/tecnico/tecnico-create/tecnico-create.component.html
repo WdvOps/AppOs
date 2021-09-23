@@ -1,0 +1,21 @@
+<form class="form">
+    <h2>Criar novo técnico</h2>
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Ex. Valdir Cezar">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="Ex 000.000.000-00">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input matInput placeholder="Ex. (00) 90000-0000">
+    </mat-form-field>
+    <div class="btn">
+        <button mat-stroked-button color="accent">CRIAR</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+</form>

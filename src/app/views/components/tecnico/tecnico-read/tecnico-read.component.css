@@ -1,12 +1,24 @@
-.container {
+.create {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
 
-p {
+.create h2 {
+    text-align: center;
     margin-left: 1rem;
     margin-top: 1rem;
+}
+
+.create button {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 table {
