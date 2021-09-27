@@ -2,7 +2,7 @@
     <h2>Criar novo técnico</h2>
     <mat-form-field class="full-width" appearance="fill">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Ex. Valdir Cezar">
+        <input matInput placeholder="Digite o nome do técnico">
     </mat-form-field>
 
     <mat-form-field class="full-width" appearance="fill">
@@ -15,7 +15,7 @@
         <input matInput placeholder="Ex. (00) 90000-0000">
     </mat-form-field>
     <div class="btn">
-        <button mat-stroked-button color="accent">CRIAR</button>
+        <button (click)="create()" mat-stroked-button color="accent">CRIAR</button>
         <button (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
     </div>
 </form>
