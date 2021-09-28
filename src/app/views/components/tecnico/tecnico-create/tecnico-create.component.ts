@@ -12,9 +12,9 @@ export class TecnicoCreateComponent implements OnInit {
 
   tecnico: Tecnico = {
     id: '',
-    nome: 'Agatha Monteiro',
-    cpf: '0435.325.297-69',
-    telefone: '(21) 2502-4944'
+    nome: '',
+    cpf: '',
+    telefone: ''
   }
 
   constructor(
@@ -36,10 +36,12 @@ export class TecnicoCreateComponent implements OnInit {
       
       if(err.error.error.match('já cadastrado')) {
         this.service.message(err.error.error)
-      } else if(err.error.errors[0].message === "número do registro de contribuite individual brasileiro (CPF) inválido") {
-        this.service.message(err.error.errors[0].message)
+      } else if(err.error.errors[0].message === 'número do registro de contribuinte individual brasileiro (CPF) inválido') {
+        this.service.message("CPF inválido!")
+        
       }
       console.log(err)
+
     })
   }
 
