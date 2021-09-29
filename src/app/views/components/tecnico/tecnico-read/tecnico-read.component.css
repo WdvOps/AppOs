@@ -24,3 +24,12 @@
 table {
     width: 100%;
 }
+
+#edit {
+    color: #fff;
+}
+
+#delete {
+    color: #fff;
+    margin-left: 2rem;
+}

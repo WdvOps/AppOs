@@ -4,7 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
 import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
+import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,14 @@ const routes: Routes = [
   {
     path: 'tecnicos/create',
     component: TecnicoCreateComponent
+  },  
+  {
+    path: 'tecnicos/update/:id',
+    component: TecnicoUpdateComponent
+  },
+  {
+    path: 'tecnicos/delete/:id',
+    component: TecnicoDeleteComponent
   }
 ];
 
