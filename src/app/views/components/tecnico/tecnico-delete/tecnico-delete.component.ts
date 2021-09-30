@@ -10,6 +10,7 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
   styleUrls: ['./tecnico-delete.component.css']
 })
 export class TecnicoDeleteComponent implements OnInit {
+ 
   id_tec = ''
 
   tecnico: Tecnico = {

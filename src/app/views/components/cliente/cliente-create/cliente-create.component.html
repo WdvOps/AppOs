@@ -1,0 +1,24 @@
+<form class="form mat-elevation-z8">
+    <h2>Criar novo cliente</h2>
+    <mat-form-field class="full-width" >
+        <mat-label>Nome</mat-label>
+        <input class="fiel-input" [(ngModel)]="cliente.nome" [formControl]="nome" required name="nome" maxlength="50" matInput placeholder="Digite o nome do cliente">
+        <mat-error *ngIf="nome.invalid">{{ errorValidName() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" >
+        <mat-label>CPF</mat-label>
+        <input class="fiel-input" [(ngModel)]="cliente.cpf" [formControl]="cpf" required name="cpf" maxlength="14" matInput placeholder="Digite o seu CPF ">
+        <mat-error *ngIf="cpf.invalid">{{ errorValidCPF() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" >
+        <mat-label>Telefone</mat-label>
+        <input class="fiel-input" [(ngModel)]="cliente.telefone" [formControl]="telefone" required name="telefone" maxlength="15" matInput placeholder="Ex. 31 90000-0000">
+        <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone() }}</mat-error>
+    </mat-form-field>
+    <div class="btn">
+        <button class="mat-elevation-z8" (click)="create()" [disabled]="errorValidName() || errorValidCPF() || errorValidTelefone()" mat-stroked-button color="accent">CRIAR</button>
+        <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+</form>
